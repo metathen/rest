@@ -143,12 +143,11 @@ body.nav-active {
 }
 .preload.loaded {
   opacity: 0;
+  transition-delay: 250ms;
+  pointer-events: none;
 }
 .preload > * {
   transition: var(--transition-1);
-}
-.preload.loaded {
-  transition-delay: 250ms;
 }
 .preload .text {
   background-image: var(--loading-text-gradient);
@@ -173,6 +172,10 @@ body.nav-active {
   border-block-start-color: var(--smoky-black-3);
   margin-bottom: 46px;
   animation: rotate360 1s linear infinite;
+}
+
+.topbar {
+  display: none;
 }
 
 @keyframes rotate360 {

@@ -141,12 +141,11 @@ body {
     transition: var(--transition-2);
     &.loaded {
         opacity: 0;
+        transition-delay: 250ms;
+        pointer-events: none;
     }
     & > * {
         transition: var(--transition-1);
-    }
-    &.loaded {
-        transition-delay: 250ms;
     }
     & .text {
         background-image: var(--loading-text-gradient);
@@ -171,6 +170,9 @@ body {
     border-block-start-color: var(--smoky-black-3);
     margin-bottom: 46px;
     animation: rotate360 1s linear infinite;
+}
+.topbar {
+    display: none;
 }
 
 @keyframes rotate360 {
