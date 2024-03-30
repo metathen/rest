@@ -139,7 +139,7 @@ body {
     place-content: center;
     justify-items: center;
     transition: var(--transition-2);
-    &.lodaded > * {
+    &.loaded {
         opacity: 0;
     }
     & > * {
@@ -147,7 +147,6 @@ body {
     }
     &.loaded {
         transition-delay: 250ms;
-        transform: translateY(100%);
     }
     & .text {
         background-image: var(--loading-text-gradient);

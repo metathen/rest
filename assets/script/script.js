@@ -6,6 +6,6 @@ window.addEventListener('load', () => {
         preloader.classList.add('loaded');
         setTimeout(() => {
             document.body.classList.add('loaded');
-        }, 600)
+        }, 750)
     }, 2000);
 })
