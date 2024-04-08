@@ -88,9 +88,9 @@ const slidePrev = function () {
     updateSlidePos();
 }
 const autoSlide = function () {
-    autoSlideInterval = setInterval(() => {
-        slideNext();
-    }, 15000)
+    // autoSlideInterval = setInterval(() => {
+    //     slideNext();
+    // }, 15000)
 }
 window.addEventListener('click', (e) => {
     if(e.target.closest('[data-prev-btn]')) {

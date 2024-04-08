@@ -286,7 +286,18 @@ body.nav-active {
   width: 100%;
   object-fit: cover;
 }
+.img-holder {
+  aspect-ratio: var(--width)/var(--height);
+  overflow: hidden;
+  background-color: var(--eerie-black-4);
+}
 
+.section {
+  position: relative;
+  padding: var(--section-space) 0;
+  overflow: hidden;
+  z-index: 1;
+}
 .section-subtitle {
   position: relative;
   color: var(--gold-crayola);
@@ -356,14 +367,61 @@ body.nav-active {
 .btn-secondary .text-2 {
   color: var(--white);
 }
+.btn-text {
+  color: var(--gold-crayola);
+  padding-bottom: 4px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing-3);
+  font-weight: var(--weight-bold);
+  transition: var(--transition-1);
+}
+.btn-text:is(:hover, :focus-visible) {
+  color: var(--white);
+}
 
 .has-before, .has-after {
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 .has-before::before {
   content: "";
   position: absolute;
+}
+
+.bg-black-10 {
+  background-color: var(--smoky-black-2);
+}
+
+.grid-list {
+  display: grid;
+  gap: 40px;
+}
+
+.hover\:shine {
+  position: relative;
+}
+.hover\:shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.4) 100%);
+  transform: skewX(-0.08turn) translateX(-180%);
+}
+.hover\:shine:is(:hover, :focus-within)::after {
+  transform: skewX(-0.08turn) translateX(275%);
+  transition: var(--transition-3);
+}
+
+.shape {
+  display: none;
+  position: absolute;
+  max-width: max-content;
+  z-index: -1;
 }
 
 /*_________________HEADER__________________*/
@@ -626,6 +684,52 @@ body.nav-active {
 }
 
 /*_________________SECTION 1_______________*/
+/*_________________SECTION 2_______________*/
+.service .section-title {
+  margin-bottom: 16px;
+}
+.service .section-text {
+  margin-bottom: 40px;
+}
+.service-card {
+  overflow: hidden;
+}
+.service-card .has-before {
+  padding: 30px 0;
+  margin-bottom: 26px;
+  z-index: 1;
+}
+.service-card .has-before::before {
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 100%;
+  background-image: url("../images/img-pattern.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  transition: var(--transition-2);
+  transition-delay: 0;
+  z-index: -1;
+  will-change: transform;
+}
+.service-card:is(:hover, :focus-within) .has-before::before {
+  transform: rotateY(0.5turn) translateX(50%);
+  transition-delay: 300ms;
+}
+.service-card:is(:hover, :focus-within) .card-banner {
+  transform: scale(1.05);
+}
+.service-card .card-banner {
+  transition: var(--transition-2);
+}
+.service .card-title {
+  margin-bottom: 12px;
+}
+
+/*_________________SECTION 2_______________*/
 @keyframes rotate360 {
   0% {
     transform: rotate(0);
