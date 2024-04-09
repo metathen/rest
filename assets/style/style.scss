@@ -437,6 +437,11 @@ body {
     max-width: max-content;
     z-index: -1;
 }
+.w {
+    &-100 {
+        width: 100%;
+    }
+}
 
 /*_________________HEADER__________________*/
 .header .btn {
@@ -769,6 +774,63 @@ body {
     }
 }
 /*_________________SECTION 2_______________*/
+
+/*_________________SECTION 3_______________*/
+.about {
+    & .section {
+        &-text {
+            margin: 15px 0 30px;
+        }
+    }
+    & .btn {
+        margin: 26px auto 0;
+    }
+    & .container {
+        display: grid;
+        gap: 120px;
+    }
+    &-banner {
+        position: relative;
+        margin-bottom: 120px;
+        & > .w-100 {
+            padding-left: 50px;
+        }
+    }
+    & .abs-img {
+        position: absolute;
+        &::before {
+            z-index: -1;
+        }
+        &-1 {
+            bottom: 120px;
+            left: 0;
+            width: 150px;
+            padding: 50px 0;
+            &::before {
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 140px;
+                background-image: url('../images/img-pattern.svg');
+                background-repeat: repeat;
+            }
+        }
+        &-2 {
+            top: -65px;
+            right: 0;
+            overflow: hidden;
+            &::before {
+                inset: 0;
+                background-image: url('../images/badge-2-bg.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                animation: rotate360 15s linear infinite;
+            }
+        }
+    }
+}
+/*_________________SECTION 3_______________*/
 
 
 @keyframes rotate360 {

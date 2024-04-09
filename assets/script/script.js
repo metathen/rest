@@ -104,3 +104,19 @@ window.addEventListener('click', (e) => {
 window.addEventListener('mouseout', autoSlide);
 window.addEventListener('load', autoSlide);
 /*______________SECTION 1 SLIDER________________*/
+
+/*______________PARALLAX________________________*/
+const parallax = document.querySelectorAll('[data-parallax-item]');
+let a, b;
+window.addEventListener('mousemove', (e) => {
+    a = (e.clientX / window.innerWidth * 10) - 5;
+    b = (e.clientY / window.innerHeight * 10) - 5;
+    a = a - (a * 2);
+    b = b - (b * 2);
+    for(let i = 0; i < parallax.length; i++) {
+        a = a * Number(parallax[i].dataset.parallaxSpeed);
+        b = b * Number(parallax[i].dataset.parallaxSpeed);
+        parallax[i].style.transform = `translate3d(${a}px, ${b}px, 0px)`;
+    }
+})
+/*______________PARALLAX________________________*/
