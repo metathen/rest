@@ -832,6 +832,43 @@ body {
 }
 /*_________________SECTION 3_______________*/
 
+/*_________________SECTION 4_______________*/
+.special {
+    &-dish {
+        &__content {
+            padding: 70px 0;
+            & .wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 40px;
+                gap: 20px;
+            }
+            & .del {
+                text-decoration: none;
+                color: var(--davys-grey);
+            }
+            & .span {
+                color: var(--gold-crayola);
+            }
+        }
+        & .abs {
+            &-img {
+                margin: 0px auto 12px;
+            }
+        }
+        & .section {
+            &-title {
+                margin: 16px 0 40px;
+            }
+        }
+        & .btn {
+            margin: 0 auto;
+        }
+    }
+}
+/*_________________SECTION 4_______________*/
+
 
 @keyframes rotate360 {
     0% {
