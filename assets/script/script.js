@@ -43,6 +43,7 @@ let lastScrollPos = 0;
 
 const hideHeader = function () {
     const isScrollBottom = lastScrollPos < window.scrollY;
+    console.log(lastScrollPos + '   окно: ' + window.scrollY)
     if(isScrollBottom) header.classList.add('hide');
     else header.classList.remove('hide');
     lastScrollPos = window.scrollY;
