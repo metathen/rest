@@ -389,6 +389,11 @@ body.nav-active {
   content: "";
   position: absolute;
 }
+.has-bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .bg-black-10 {
   background-color: var(--smoky-black-2);
@@ -750,6 +755,7 @@ body.nav-active {
 }
 .about-banner {
   position: relative;
+  margin-bottom: 120px;
 }
 .about-banner > .w-100 {
   padding-left: 50px;
@@ -761,7 +767,7 @@ body.nav-active {
   z-index: -1;
 }
 .about .abs-img-1 {
-  bottom: 120px;
+  bottom: -120px;
   left: 0;
   width: 150px;
   padding: 50px 0;
@@ -891,6 +897,38 @@ body.nav-active {
 }
 
 /*_________________SECTION 5_______________*/
+/*_________________SECTION 6_______________*/
+.testi {
+  position: static;
+}
+.testi .quote {
+  font-size: 7rem;
+  font-family: var(--fontFamily-forum);
+  line-height: 0.7em;
+}
+.testi .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin: 40px 0 50px;
+}
+.testi .separator {
+  animation: rotate360 15s linear infinite;
+}
+.testi .profile-name {
+  color: var(--gold-crayola);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing-3);
+}
+
+.profile .img {
+  margin: 0 auto;
+  border-radius: var(--radius-circle);
+  margin-bottom: 15px;
+}
+
+/*_________________SECTION 6_______________*/
 @keyframes rotate360 {
   0% {
     transform: rotate(0);
