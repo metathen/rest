@@ -1135,6 +1135,57 @@ textarea {
 }
 /*_________________SECTION 7_______________*/
 
+/*_________________SECTION 8_______________*/
+.feature {
+    & .section {
+        &-title {
+            margin-bottom: 40px;
+        }
+    }
+    &-card {
+        padding: 30px 20px 40px;
+        & .card {
+            &-icon {
+                max-width: max-content;
+                margin: 0 auto;
+                transition: var(--transition-2);
+            }
+            &-title {
+                margin: 20px 0;
+            }
+            &-text {
+                color: var(--quick-silver);
+                line-height: var(--lineHeight-6);
+            }
+        }
+        &:hover {
+            & .card {
+                &-icon {
+                    transform: scale(-1) rotate(180deg);
+                }
+            }
+        }
+    }
+    &-item {
+        &:nth-child(2n+1) {
+            & .feature {
+                &-card {
+                    background-color: var(--eerie-black-3);
+                }
+            }
+        }
+        &:nth-child(2n) {
+            & .feature {
+                &-card {
+                    background-color: var(--smoky-black-3);
+                }
+            }
+        }
+    }
+}
+/*_________________SECTION 8_______________*/
+
+
 
 @keyframes rotate360 {
     0% {
