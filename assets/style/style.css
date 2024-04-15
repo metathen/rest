@@ -361,6 +361,10 @@ body.nav-active {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.btn-secondary {
+  background-color: var(--gold-crayola);
+  color: var(--black);
+}
 .btn-secondary::before {
   background-color: var(--smoky-black-1);
 }
@@ -435,6 +439,53 @@ body.nav-active {
 
 .move-anim {
   animation: move 5s linear infinite;
+}
+
+.input-field {
+  background-color: var(--eerie-black-2);
+  color: var(white);
+  height: 56px;
+  padding: 10px 20px;
+  border: 1px solid var(--white-alpha-10);
+  margin-bottom: 20px;
+  outline: none;
+  transition: boreder-color var(--transition-2);
+}
+.input-field::placeholder {
+  color: var(--white);
+}
+.input-field:focus {
+  border-color: var(--gold-crayola);
+}
+
+.icon-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+.icon-wrapper .input-field {
+  margin-bottom: 0;
+  padding-left: 40px;
+  appearance: none;
+  cursor: pointer;
+}
+.icon-wrapper ion-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  stroke-width: none;
+  pointer-events: none;
+  color: var(--white);
+}
+.icon-wrapper ion-icon svg, .icon-wrapper ion-icon path {
+  fill: white;
+  color: white;
+}
+.icon-wrapper ion-icon:first-child {
+  left: 15px;
+}
+.icon-wrapper ion-icon:last-child {
+  right: 10px;
 }
 
 /*_________________HEADER__________________*/
@@ -900,6 +951,7 @@ body.nav-active {
 /*_________________SECTION 6_______________*/
 .testi {
   position: static;
+  padding-bottom: 310px;
 }
 .testi .quote {
   font-size: 7rem;
@@ -929,6 +981,62 @@ body.nav-active {
 }
 
 /*_________________SECTION 6_______________*/
+/*_________________SECTION 7_______________*/
+.reservation {
+  margin-top: -270px;
+}
+
+.form-text {
+  margin-bottom: 40px;
+}
+.form .link {
+  display: inline;
+  color: var(--gold-crayola);
+}
+.form-right {
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.form-right .headline-1 {
+  margin-bottom: 40px;
+}
+.form-right .contact-label {
+  margin-bottom: 5px;
+}
+.form-right .separator {
+  margin: 20px auto;
+}
+.form-right .body-4 {
+  color: var(--quick-silver);
+  line-height: var(--lineHeight-3);
+}
+.form-right .body-4:not(:last-child) {
+  margin-bottom: 25px;
+}
+.form-right, .form-left {
+  padding: 40px 20px 30px;
+}
+.form-left .btn {
+  max-width: 100%;
+  width: 100%;
+}
+
+.input-field[type=date] {
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+.input-field[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+textarea.input-field {
+  resize: none;
+  height: 140px;
+  padding: 20px 0;
+  line-height: var(--lineHeight-1);
+}
+
+/*_________________SECTION 7_______________*/
 @keyframes rotate360 {
   0% {
     transform: rotate(0);
