@@ -39,6 +39,7 @@ window.addEventListener('click', (e) => {
 
 /*______________HEADER SLICK________________*/
 const header = document.querySelector('.header');
+const backToTop = document.querySelector('[data-back-top-btn]');
 let lastScrollPos = 0;
 
 const hideHeader = function () {
@@ -51,9 +52,12 @@ const hideHeader = function () {
 window.addEventListener('scroll', () => {
     if(window.scrollY >= 50) {
         header.classList.add('active');
+        backToTop.classList.add('active');
         hideHeader();
+    } else {
+        header.classList.remove('active');
+        backToTop.classList.remove('active');
     }
-    else header.classList.remove('active');
 })
 /*______________HEADER SLICK________________*/
 
