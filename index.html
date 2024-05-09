@@ -12,6 +12,7 @@
         rel="stylesheet" 
     />
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/media.css">
     <link rel="preload" href="./assets/images/hero-slider-1.jpg">
     <link rel="preload" href="./assets/images/hero-slider-2.jpg">
     <link rel="preload" href="./assets/images/hero-slider-3.jpg">
@@ -25,7 +26,7 @@
         <div class="container">
             <address class="topbar-item">
                 <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-                <span class="span">Restaurant St, Delicious City, London 9578, UK</span>
+                <span class="span">Restaurant St, Moscow City, Moscow</span>
             </address>
             <div class="separator"></div>
             <div class="topbar-item item-2">
@@ -34,18 +35,18 @@
                 </div>
                 <span class="span">Daily : 8.00 am to 10.00 pm</span>
             </div>
-            <a href="tel:+" class="topbar-item">
+            <a href="tel:+" class="topbar-item link">
                 <div class="icon">
                     <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
                 </div>
-                <span class="span">+1 123 456 7890</span>
+                <span class="span">+7 953 784 58 40</span>
             </a>
             <div class="separator"></div>
-            <a href="mailto:" class="topbar-item">
+            <a href="mailto:" class="topbar-item link">
                 <div class="icon">
                     <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
                 </div>
-                <span class="span">booking@restaurant.com</span>
+                <span class="span">qwertynolan123@gmail.com</span>
             </a>
         </div>
     </div>
@@ -115,8 +116,7 @@
             </nav>
             <a href="#" class="btn btn-secondary">
                 <span class="text text-1">Find a Table</span>
-
-                <span class="text text-1" aria-hidden="true">Find a Table</span>
+                <span class="text text-2" aria-hidden="true">Find a Table</span>
             </a>
             <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
                 <span class="line line-1"></span>
@@ -333,13 +333,13 @@
                                 loading="lazy"
                             >
                         </div>
-                        <img src="./assets/images/shape-3.png" alt=""
-                            width="197"
-                            height="194"
-                            loading="lazy"
-                            class="shape"
-                        >
                     </figure>
+                    <img src="./assets/images/shape-3.png" alt=""
+                        width="197"
+                        height="194"
+                        loading="lazy"
+                        class="shape"
+                    >
                 </div>
             </section>
             <section class="special-dish text-center" aria-labelledby="dish-label">
@@ -352,8 +352,8 @@
                         class="img-cover"
                     >
                 </div>
-                <div class="special-dish__content bg-black-10">
-                    <div class="containe">
+                <div class="special-dish-content bg-black-10">
+                    <div class="container">
                         <img src="./assets/images/badge-1.png" 
                             width="28" 
                             height="41" 
@@ -361,7 +361,7 @@
                             class="abs-img"
                             loading="lazy"
                         >
-                        <p class="section-subtitle la">Special Dish</p>
+                        <p class="section-subtitle label-2">Special Dish</p>
                         <h2 class="headline-1 section-title">Lobster Tortellini</h2>
                         <p class="section-text">
                             Lorem Ipsum is simply dummy text of the printingand typesetting industry 
@@ -441,7 +441,6 @@
                                         <h3 class="title-3">
                                             <a href="#" class="card-title">Lasagne</a>
                                         </h3>
-                                        <span class="badge label-1">Seasonal</span>
                                         <span class="span title-2">$40.00</span>
                                     </div>
                                     <p class="card-text label-">
@@ -586,6 +585,7 @@
             <section class="section testi text-center has-bg-image" 
                 style="background-image: url('./assets/images/testimonial-bg.jpg')"
                 aria-label="testmonials"
+                id="chefs"
             >
                 <div class="container">
                     <div class="quote">”</div>
@@ -608,7 +608,7 @@
                     </div>
                 </div>
             </section>
-            <section class="reservation">
+            <section class="reservation" id="contact">
                 <div class="container">
                     <div class="form reservation-form bg-black-10">
                         <form class="form-left">
@@ -637,14 +637,10 @@
                                     </select>
                                     <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                                 </div>
-                            </div>
-                            <div class="input-wrapper">
                                 <div class="icon-wrapper">
                                     <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
                                     <input type="date" name="reservation-date" class="input-field">
                                 </div>
-                            </div>
-                            <div class="input-wrapper">
                                 <div class="icon-wrapper">
                                     <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
                                     <select name="person" class="input-field">
@@ -764,7 +760,7 @@
                             </div>
                         </li>
                     </ul>
-                    <img src="./assets/images/shape-1.png" 
+                    <img src="./assets/images/shape-7.png" 
                         alt="shape" 
                         loading="lazy" 
                         width="208" 
@@ -850,55 +846,57 @@
     </main>
     <footer class="footer section has-bg-image text-center" style="background-image: url('./assets/images/footer-bg.jpg')">
         <div class="container">
-            <div class="footer-brand has-before has-after">
-                <a href="#" class="logo">
-                    <img src="./assets/images/logo.svg" 
-                        alt="grill home"
-                        loading="lazy"
-                        width="160"
-                        height="50"
-                    >
-                </a>
-                <address class="body-4">
-                    Restaurant St, Delicious City, Moscow
-                </address>
-                <a href="mailto:qwertynolan@gmail.com" class="body-4 contact-link">
-                    qwertynolan@gmail.com
-                </a>
-                <a href="tel:+79537845840" class="body-4 contact-link">Booking Request : +7-953-784-58-40</a>
-                <p class="body-4">
-                    Open : 09:00 am - 01:00 pm
-                </p>
-                <div class="wrapper">
-                    <div class="separator"></div>
-                    <div class="separator"></div>
-                    <div class="separator"></div>
-                </div>
-                <p class="title-1">Get News & Offers</p>
-                <p class="label-1">Subscribe us & Get <span class="span">25% Off.</span></p>
-                <form action="" class="input-wrapper">
-                    <div class="icon-wrapper">
-                        <ion-icon aria-hidden="true" name="mail-outline"></ion-icon>
-                        <input type="email" name="email" placeholder="Your Email" class="input-field" autocomplate="off">
+            <div class="grid-list">
+                <div class="footer-brand has-before has-after">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.svg" 
+                            alt="grill home"
+                            loading="lazy"
+                            width="160"
+                            height="50"
+                        >
+                    </a>
+                    <address class="body-4">
+                        Restaurant St, Delicious City, Moscow
+                    </address>
+                    <a href="mailto:qwertynolan@gmail.com" class="body-4 contact-link">
+                        qwertynolan@gmail.com
+                    </a>
+                    <a href="tel:+79537845840" class="body-4 contact-link">Booking Request : +7-953-784-58-40</a>
+                    <p class="body-4">
+                        Open : 09:00 am - 01:00 pm
+                    </p>
+                    <div class="wrapper">
+                        <div class="separator"></div>
+                        <div class="separator"></div>
+                        <div class="separator"></div>
                     </div>
-                    <button type="submit" class="btn btn-secondary">
-                        <span class="text text-1">Subscribe</span>
-                        <span class="text text-2" aria-hidden="true">Subscribe</span>
-                    </button>
-                </form>
+                    <p class="title-1">Get News & Offers</p>
+                    <p class="label-1">Subscribe us & Get <span class="span">25% Off.</span></p>
+                    <form action="" class="input-wrapper">
+                        <div class="icon-wrapper">
+                            <ion-icon aria-hidden="true" name="mail-outline"></ion-icon>
+                            <input type="email" name="email" placeholder="Your Email" class="input-field" autocomplate="off">
+                        </div>
+                        <button type="submit" class="btn btn-secondary">
+                            <span class="text text-1">Subscribe</span>
+                            <span class="text text-2" aria-hidden="true">Subscribe</span>
+                        </button>
+                    </form>
+                </div>
+                <ul class="footer-list">
+                    <li><a href="#" class="label-2 footer-link hover-underline">Home</a></li>
+                    <li><a href="#" class="label-2 footer-link hover-underline">Menus</a></li>
+                    <li><a href="#" class="label-2 footer-link hover-underline">About us</a></li>
+                    <li><a href="#" class="label-2 footer-link hover-underline">Our Chefs</a></li>
+                    <li><a href="#" class="label-2 footer-link hover-underline">Contact</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><a href="#" class="label-2 footer-link hover-underline">VK</a></li>
+                    <li><a href="#" class="label-2 footer-link hover-underline">Telegram</a></li>
+                    <li><a href="#" class="label-2 footer-link hover-underline">YouTube</a></li>
+                </ul>
             </div>
-            <ul class="footer-list">
-                <li><a href="#" class="label-2 footer-link hover-underline">Home</a></li>
-                <li><a href="#" class="label-2 footer-link hover-underline">Menus</a></li>
-                <li><a href="#" class="label-2 footer-link hover-underline">About us</a></li>
-                <li><a href="#" class="label-2 footer-link hover-underline">Our Chefs</a></li>
-                <li><a href="#" class="label-2 footer-link hover-underline">Contact</a></li>
-            </ul>
-            <ul class="footer-list">
-                <li><a href="#" class="label-2 footer-link hover-underline">VK</a></li>
-                <li><a href="#" class="label-2 footer-link hover-underline">Telegram</a></li>
-                <li><a href="#" class="label-2 footer-link hover-underline">YouTube</a></li>
-            </ul>
         </div>
     </footer>
     <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>

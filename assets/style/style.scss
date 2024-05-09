@@ -459,13 +459,13 @@ body {
 .input {
     &-field {
         background-color: var(--eerie-black-2);
-        color: var(white);
+        color: var(--white);
         height: 56px;
         padding: 10px 20px;
         border: 1px solid var(--white-alpha-10);
         margin-bottom: 20px;
         outline: none;
-        transition: boreder-color var(--transition-2);
+        transition: border-color var(--transition-2);
         &::placeholder {
             color: var(--white);
         }
@@ -900,7 +900,7 @@ body {
 /*_________________SECTION 4_______________*/
 .special {
     &-dish {
-        &__content {
+        &-content {
             padding: 70px 0;
             & .wrapper {
                 display: flex;
@@ -1079,7 +1079,7 @@ body {
         color: var(--gold-crayola);
     }
     &-right {
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-position: top left;
         & .headline {
             &-1 {
@@ -1129,7 +1129,7 @@ textarea {
     &.input-field {
         resize: none;
         height: 140px;
-        padding: 20px 0;
+        padding: 20px;
         line-height: var(--lineHeight-1);
     }
 }

@@ -443,13 +443,13 @@ body.nav-active {
 
 .input-field {
   background-color: var(--eerie-black-2);
-  color: var(white);
+  color: var(--white);
   height: 56px;
   padding: 10px 20px;
   border: 1px solid var(--white-alpha-10);
   margin-bottom: 20px;
   outline: none;
-  transition: boreder-color var(--transition-2);
+  transition: border-color var(--transition-2);
 }
 .input-field::placeholder {
   color: var(--white);
@@ -847,21 +847,21 @@ body.nav-active {
 
 /*_________________SECTION 3_______________*/
 /*_________________SECTION 4_______________*/
-.special-dish__content {
+.special-dish-content {
   padding: 70px 0;
 }
-.special-dish__content .wrapper {
+.special-dish-content .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
   gap: 20px;
 }
-.special-dish__content .del {
+.special-dish-content .del {
   text-decoration: none;
   color: var(--davys-grey);
 }
-.special-dish__content .span {
+.special-dish-content .span {
   color: var(--gold-crayola);
 }
 .special-dish .abs-img {
@@ -994,7 +994,7 @@ body.nav-active {
   color: var(--gold-crayola);
 }
 .form-right {
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: top left;
 }
 .form-right .headline-1 {
@@ -1032,7 +1032,7 @@ body.nav-active {
 textarea.input-field {
   resize: none;
   height: 140px;
-  padding: 20px 0;
+  padding: 20px;
   line-height: var(--lineHeight-1);
 }
 
